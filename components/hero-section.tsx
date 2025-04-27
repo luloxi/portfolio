@@ -34,22 +34,25 @@ export function HeroSection() {
       </div>
       <div className="flex gap-4 mt-12">
         <Link
-          href="#"
+          href="https://github.com/luloxi"
           className="text-gray-400 hover:text-white transition-colors"
+          target="_blank"
         >
           <Github className="h-6 w-6" />
         </Link>
         <Link
-          href="#"
+          href="https://www.linkedin.com/in/lulox/"
           className="text-gray-400 hover:text-white transition-colors"
-        >
-          <Twitter className="h-6 w-6" />
-        </Link>
-        <Link
-          href="#"
-          className="text-gray-400 hover:text-white transition-colors"
+          target="_blank"
         >
           <Linkedin className="h-6 w-6" />
+        </Link>
+        <Link
+          href="https://x.com/LuloxDev"
+          className="text-gray-400 hover:text-white transition-colors"
+          target="_blank"
+        >
+          <Twitter className="h-6 w-6" />
         </Link>
       </div>
     </section>
