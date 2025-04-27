@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Hexagon } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Hexagon } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
@@ -10,22 +10,35 @@ export function Header() {
         <span className="font-bold text-xl">Lulox</span>
       </div>
       <nav className="hidden md:flex gap-6">
-        <Link href="#projects" className="hover:text-emerald-400 transition-colors">
+        <Link
+          href="#projects"
+          className="hover:text-emerald-400 transition-colors"
+        >
           Projects
         </Link>
-        <Link href="#skills" className="hover:text-emerald-400 transition-colors">
+        <Link
+          href="#skills"
+          className="hover:text-emerald-400 transition-colors"
+        >
           Skills
         </Link>
-        <Link href="#about" className="hover:text-emerald-400 transition-colors">
+        {/* <Link
+          href="#about"
+          className="hover:text-emerald-400 transition-colors"
+        >
           About
-        </Link>
-        <Link href="#contact" className="hover:text-emerald-400 transition-colors">
+        </Link> */}
+        <Link
+          href="#contact"
+          className="hover:text-emerald-400 transition-colors"
+        >
           Contact
         </Link>
       </nav>
-      <Button variant="outline" className="border-emerald-500 text-emerald-500 hover:bg-emerald-950 hover:text-white">
+      <div className="px-10"></div>
+      {/* <Button variant="outline" className="border-emerald-500 text-emerald-500 hover:bg-emerald-950 hover:text-white">
         Connect Wallet
-      </Button>
+      </Button> */}
     </header>
-  )
+  );
 }

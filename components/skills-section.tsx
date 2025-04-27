@@ -1,12 +1,14 @@
-import { Code, Zap, Database } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Code, Zap, Database } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export function SkillsSection() {
   return (
     <section id="skills" className="container mx-auto px-4 py-20 relative z-10">
       <h2 className="text-3xl font-bold mb-2">Skills & Technologies</h2>
-      <p className="text-gray-400 mb-12">My technical expertise in the blockchain ecosystem</p>
+      <p className="text-gray-400 mb-12">
+        My technical expertise in the blockchain ecosystem
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Card className="bg-gray-900 border-gray-800">
@@ -15,22 +17,21 @@ export function SkillsSection() {
               <Code className="h-6 w-6 text-emerald-500" />
             </div>
             <h3 className="text-xl font-bold mb-2">Smart Contracts</h3>
-            <p className="text-gray-400 mb-4">Developing secure and efficient smart contracts</p>
+            <p className="text-gray-400 mb-4">
+              Developing secure and efficient smart contracts
+            </p>
             <div className="flex flex-wrap gap-2">
               <Badge variant="outline" className="border-gray-700">
                 Solidity
               </Badge>
               <Badge variant="outline" className="border-gray-700">
-                Rust
-              </Badge>
-              <Badge variant="outline" className="border-gray-700">
-                Vyper
+                Foundry
               </Badge>
               <Badge variant="outline" className="border-gray-700">
                 Hardhat
               </Badge>
               <Badge variant="outline" className="border-gray-700">
-                Truffle
+                Chainlink
               </Badge>
             </div>
           </CardContent>
@@ -42,7 +43,9 @@ export function SkillsSection() {
               <Zap className="h-6 w-6 text-emerald-500" />
             </div>
             <h3 className="text-xl font-bold mb-2">Frontend & DApps</h3>
-            <p className="text-gray-400 mb-4">Building intuitive decentralized applications</p>
+            <p className="text-gray-400 mb-4">
+              Building intuitive decentralized applications
+            </p>
             <div className="flex flex-wrap gap-2">
               <Badge variant="outline" className="border-gray-700">
                 React
@@ -51,13 +54,19 @@ export function SkillsSection() {
                 Next.js
               </Badge>
               <Badge variant="outline" className="border-gray-700">
-                ethers.js
+                Tailwind CSS
               </Badge>
               <Badge variant="outline" className="border-gray-700">
-                web3.js
+                TypeScript
               </Badge>
               <Badge variant="outline" className="border-gray-700">
-                wagmi
+                Scaffold-ETH 2
+              </Badge>
+              <Badge variant="outline" className="border-gray-700">
+                Wagmi
+              </Badge>
+              <Badge variant="outline" className="border-gray-700">
+                Viem
               </Badge>
             </div>
           </CardContent>
@@ -69,16 +78,15 @@ export function SkillsSection() {
               <Database className="h-6 w-6 text-emerald-500" />
             </div>
             <h3 className="text-xl font-bold mb-2">Blockchain Protocols</h3>
-            <p className="text-gray-400 mb-4">Working with various blockchain networks</p>
+            <p className="text-gray-400 mb-4">
+              Working with various blockchain networks
+            </p>
             <div className="flex flex-wrap gap-2">
               <Badge variant="outline" className="border-gray-700">
                 Ethereum
               </Badge>
               <Badge variant="outline" className="border-gray-700">
-                Polygon
-              </Badge>
-              <Badge variant="outline" className="border-gray-700">
-                Solana
+                Base
               </Badge>
               <Badge variant="outline" className="border-gray-700">
                 Avalanche
@@ -91,5 +99,5 @@ export function SkillsSection() {
         </Card>
       </div>
     </section>
-  )
+  );
 }

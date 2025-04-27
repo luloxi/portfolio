@@ -1,19 +1,27 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ExternalLink } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  image: string
-  tags: string[]
-  link: string
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  link: string;
+  github?: string;
 }
 
-export function ProjectCard({ title, description, image, tags, link }: ProjectCardProps) {
+export function ProjectCard({
+  title,
+  description,
+  image,
+  tags,
+  link,
+  github,
+}: ProjectCardProps) {
   return (
     <Card className="overflow-hidden bg-gray-900 border-gray-800 transition-all duration-300 hover:border-emerald-800 hover:shadow-[0_0_15px_rgba(16,185,129,0.15)]">
       <div className="relative h-48 overflow-hidden">
@@ -34,10 +42,25 @@ export function ProjectCard({ title, description, image, tags, link }: ProjectCa
             </Badge>
           ))}
         </div>
-        <Link href={link} className="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-medium">
-          View Project <ExternalLink className="ml-2 h-4 w-4" />
-        </Link>
+        <div className="flex flex-row items-center justify-around">
+          <Link
+            href={link}
+            target="_blank"
+            className="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-medium"
+          >
+            View Project <ExternalLink className="ml-2 h-4 w-4" />
+          </Link>
+          {github && (
+            <Link
+              href={github || "#"}
+              target="_blank"
+              className="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-medium"
+            >
+              View GitHub <ExternalLink className="ml-2 h-4 w-4" />
+            </Link>
+          )}
+        </div>
       </CardContent>
     </Card>
-  )
+  );
 }

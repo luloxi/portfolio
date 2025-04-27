@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Hexagon, Github, Twitter, Linkedin } from "lucide-react"
+import Link from "next/link";
+import { Hexagon, Github, Twitter, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,20 +10,34 @@ export function Footer() {
             <Hexagon className="h-6 w-6 text-emerald-500" />
             <span className="font-bold">Lulox</span>
           </div>
-          <div className="text-gray-400 text-sm">© {new Date().getFullYear()} Lulox. All rights reserved.</div>
+          <div className="text-gray-400 text-sm">
+            © {new Date().getFullYear()} Lulox. All rights reserved.
+          </div>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="https://github.com/luloxi"
+              className="text-gray-400 hover:text-white transition-colors"
+              target="_blank"
+            >
               <Github className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="https://x.com/LuloxDev"
+              className="text-gray-400 hover:text-white transition-colors"
+              target="_blank"
+            >
               <Twitter className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            <Link
+              href="https://www.linkedin.com/in/lulox/"
+              className="text-gray-400 hover:text-white transition-colors"
+              target="_blank"
+            >
               <Linkedin className="h-5 w-5" />
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
