@@ -7,7 +7,7 @@ export function AboutSection() {
   return (
     <section id="about" className="container mx-auto px-4 py-20 relative z-10">
       <div className="grid grid-cols-1 md:grid-cols-2  items-center">
-        <div className="md:pl-10">
+        <div className="flex justify-center md:justify-start md:pl-10">
           <Image
             src="/profile-picture.jpg?height=300&width=300"
             alt="Profile"
@@ -16,7 +16,7 @@ export function AboutSection() {
             className="rounded-lg border border-gray-800"
           />
         </div>
-        <div>
+        <div className="mt-2 text-center md:text-left">
           <Badge className="mb-4 bg-emerald-900 text-emerald-400 hover:bg-emerald-900">
             About Me
           </Badge>

@@ -10,7 +10,7 @@ export function HeroSection() {
       <Badge className="mb-4 bg-emerald-900 text-emerald-400 hover:bg-emerald-900">
         Web3 Developer & Blockchain Engineer
       </Badge>
-      <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400">
+      <h1 className="text-4xl pb-3 md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400">
         Building the Decentralized Future
       </h1>
       <p className="text-lg md:text-xl text-gray-400 max-w-2xl mb-8">

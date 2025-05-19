@@ -15,7 +15,7 @@ export function ProjectsSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
-          title="SAMI - AI Game"
+          title="SAMI - AI game"
           description="Group chatroom game where players can bet crypto on who's the impostor AI in the chat."
           image="/sami-thumbnail.jpg?height=300&width=400"
           tags={[
@@ -32,7 +32,7 @@ export function ProjectsSection() {
           github="https://github.com/fabian416/sami"
         />
         <ProjectCard
-          title="PunkSociety - Social Network"
+          title="PunkSociety - Social network"
           description="Social network where posts are NFTs and likes send USDC to the post author."
           image="/punksociety-thumbnail.jpg?height=300&width=400"
           tags={[
@@ -46,6 +46,21 @@ export function ProjectsSection() {
           ]}
           link="https://punksociety.xyz/"
           github="https://github.com/luloxi/PunkSociety"
+        />
+        <ProjectCard
+          title="Tap - Job search platform"
+          description="Web2 platform to connect gamers and streamers with content creators and people in their field."
+          image="/tap-thumbnail.png?height=300&width=400"
+          tags={[
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Node.js",
+            "Express",
+          ]}
+          link="https://tap-tan-ten.vercel.app/"
+          github="https://github.com/luloxi/tap"
         />
         <ProjectCard
           title="BuidlGuidl projects"
