@@ -1,80 +1,45 @@
-import { ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { ProjectCard } from "@/components/project-card";
+"use client"
+import { ProjectCard } from "@/components/project-card"
+import { useLanguage } from "@/contexts/language-context"
 
 export function ProjectsSection() {
+  const { t } = useLanguage()
+
   return (
-    <section
-      id="projects"
-      className="container mx-auto px-4 py-20 relative z-10"
-    >
-      <h2 className="text-3xl font-bold mb-2">Featured Projects</h2>
-      <p className="text-gray-400 mb-12">
-        Decentralized applications and blockchain solutions
-      </p>
+    <section id="projects" className="container mx-auto px-4 py-20 relative z-10">
+      <h2 className="text-3xl font-bold mb-2">{t("projects.title")}</h2>
+      <p className="text-gray-400 mb-12">{t("projects.subtitle")}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
           title="SAMI - AI game"
-          description="Group chatroom game where players can bet crypto on who's the impostor AI in the chat."
+          description={t("projects.sami.description")}
           image="/sami-thumbnail.jpg?height=300&width=400"
-          tags={[
-            "Solidity",
-            "React",
-            "Next.js",
-            "TypeScript",
-            "Tailwind CSS",
-            "Scaffold-ETH 2",
-            "Node.js",
-            "Express",
-          ]}
+          tags={["Solidity", "React", "Next.js", "TypeScript", "Tailwind CSS", "Scaffold-ETH 2", "Node.js", "Express"]}
           link="https://playsami.fun/"
           github="https://github.com/fabian416/sami"
         />
         <ProjectCard
           title="PunkSociety - Social network"
-          description="Social network where posts are NFTs and likes send USDC to the post author."
+          description={t("projects.punksociety.description")}
           image="/punksociety-thumbnail.jpg?height=300&width=400"
-          tags={[
-            "Solidity",
-            "React",
-            "Next.js",
-            "TypeScript",
-            "Tailwind CSS",
-            "Scaffold-ETH 2",
-            "IPFS",
-          ]}
+          tags={["Solidity", "React", "Next.js", "TypeScript", "Tailwind CSS", "Scaffold-ETH 2", "IPFS"]}
           link="https://punksociety.xyz/"
           github="https://github.com/luloxi/PunkSociety"
         />
         <ProjectCard
           title="Tap - Job search platform"
-          description="Web2 platform to connect gamers and streamers with content creators and people in their field."
+          description={t("projects.tap.description")}
           image="/tap-thumbnail.png?height=300&width=400"
-          tags={[
-            "React",
-            "Next.js",
-            "TypeScript",
-            "Tailwind CSS",
-            "Node.js",
-            "Express",
-          ]}
+          tags={["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Express"]}
           link="https://tap-tan-ten.vercel.app/"
           github="https://github.com/luloxi/tap"
         />
         <ProjectCard
           title="BuidlGuidl projects"
-          description="Several prototypes to show Scaffold-ETH 2 usage for creating dApps."
+          description={t("projects.buidlguidl.description")}
           image="/buidlguidl-thumbnail.jpg?height=300&width=400"
-          tags={[
-            "Solidity",
-            "React",
-            "Next.js",
-            "TypeScript",
-            "Tailwind CSS",
-            "Scaffold-ETH 2",
-            "IPFS",
-          ]}
+          tags={["Solidity", "React", "Next.js", "TypeScript", "Tailwind CSS", "Scaffold-ETH 2", "IPFS"]}
           link="https://app.buidlguidl.com/builders/0xfBD9Ca40386A8C632cf0529bbb16b4BEdB59a0A0"
         />
       </div>
@@ -88,5 +53,5 @@ export function ProjectsSection() {
         </Button>
       </div> */}
     </section>
-  );
+  )
 }

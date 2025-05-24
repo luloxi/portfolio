@@ -1,7 +1,11 @@
-import Link from "next/link";
-import { Hexagon, Github, Twitter, Linkedin } from "lucide-react";
+"use client"
+
+import Link from "next/link"
+import { Hexagon, Github, Twitter, Linkedin } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export function Footer() {
+  const { t } = useLanguage()
   return (
     <footer className="border-t border-gray-800 py-12 relative z-10">
       <div className="container mx-auto px-4">
@@ -11,7 +15,7 @@ export function Footer() {
             <span className="font-bold">Lulox</span>
           </div>
           <div className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Lulox. All rights reserved.
+            © {new Date().getFullYear()} Lulox. {t("footer.rights")}
           </div>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link
@@ -39,5 +43,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

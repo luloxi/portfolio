@@ -1,8 +1,12 @@
-import Link from "next/link";
-import { Hexagon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+"use client"
+
+import Link from "next/link"
+import { Hexagon } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
+import { LanguageSwitcher } from "@/components/language-switcher"
 
 export function Header() {
+  const { t } = useLanguage()
   return (
     <header className="container mx-auto py-6 px-4 flex justify-between items-center relative z-10">
       <div className="flex items-center gap-2">
@@ -10,17 +14,11 @@ export function Header() {
         <span className="font-bold text-xl">Lulox</span>
       </div>
       <nav className="hidden md:flex gap-6">
-        <Link
-          href="#projects"
-          className="hover:text-emerald-400 transition-colors"
-        >
-          Projects
+        <Link href="#projects" className="hover:text-emerald-400 transition-colors">
+          {t("nav.projects")}
         </Link>
-        <Link
-          href="#skills"
-          className="hover:text-emerald-400 transition-colors"
-        >
-          Skills
+        <Link href="#skills" className="hover:text-emerald-400 transition-colors">
+          {t("nav.skills")}
         </Link>
         {/* <Link
           href="#about"
@@ -28,17 +26,14 @@ export function Header() {
         >
           About
         </Link> */}
-        <Link
-          href="#contact"
-          className="hover:text-emerald-400 transition-colors"
-        >
-          Contact
+        <Link href="#contact" className="hover:text-emerald-400 transition-colors">
+          {t("nav.contact")}
         </Link>
       </nav>
-      <div className="px-10"></div>
+      <LanguageSwitcher />
       {/* <Button variant="outline" className="border-emerald-500 text-emerald-500 hover:bg-emerald-950 hover:text-white">
         Connect Wallet
       </Button> */}
     </header>
-  );
+  )
 }

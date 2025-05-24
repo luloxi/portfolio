@@ -1,9 +1,13 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
+"use client"
+
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
+import { useLanguage } from "@/contexts/language-context"
 
 export function AboutSection() {
+  const { t } = useLanguage()
   return (
     <section id="about" className="container mx-auto px-4 py-20 relative z-10">
       <div className="grid grid-cols-1 md:grid-cols-2  items-center">
@@ -17,24 +21,10 @@ export function AboutSection() {
           />
         </div>
         <div className="mt-2 text-center md:text-left">
-          <Badge className="mb-4 bg-emerald-900 text-emerald-400 hover:bg-emerald-900">
-            About Me
-          </Badge>
-          <h2 className="text-3xl font-bold mb-6">
-            Blockchain Engineer & Web3 Enthusiast
-          </h2>
-          <p className="text-gray-400 mb-4">
-            I'm a passionate blockchain developer with 2+ years of experience
-            building decentralized applications and smart contracts. My journey
-            in Web3 began in 2022, and I've been at the growing in this
-            technological niche ever since.
-          </p>
-          <p className="text-gray-400 mb-6">
-            I specialize in creating secure, efficient, and user-friendly
-            blockchain solutions. My goal is to contribute to the growth of the
-            decentralized ecosystem and help bridge the gap between traditional
-            systems and Web3, and make it fun in the process!
-          </p>
+          <Badge className="mb-4 bg-emerald-900 text-emerald-400 hover:bg-emerald-900">{t("about.badge")}</Badge>
+          <h2 className="text-3xl font-bold mb-6">{t("about.title")}</h2>
+          <p className="text-gray-400 mb-4">{t("about.paragraph1")}</p>
+          <p className="text-gray-400 mb-6">{t("about.paragraph2")}</p>
           {/* <div className="grid grid-cols-2 gap-4 mb-6">
             <div>
               <p className="text-emerald-500 font-bold text-4xl">30+</p>
@@ -54,12 +44,10 @@ export function AboutSection() {
             </div>
           </div> */}
           <Link href="https://github.com/luloxi/Resume" target="_blank">
-            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
-              See Resume
-            </Button>
+            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">{t("about.seeResume")}</Button>
           </Link>
         </div>
       </div>
     </section>
-  );
+  )
 }
