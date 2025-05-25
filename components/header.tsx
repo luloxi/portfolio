@@ -14,11 +14,14 @@ export function Header() {
         <span className="font-bold text-xl">Lulox</span>
       </div>
       <nav className="hidden md:flex gap-6">
-        <Link href="#projects" className="hover:text-emerald-400 transition-colors">
+        <Link href="/#projects" className="hover:text-emerald-400 transition-colors">
           {t("nav.projects")}
         </Link>
-        <Link href="#skills" className="hover:text-emerald-400 transition-colors">
+        <Link href="/#skills" className="hover:text-emerald-400 transition-colors">
           {t("nav.skills")}
+        </Link>
+        <Link href="/automation" className="hover:text-purple-400 transition-colors">
+          {t("nav.automation")}
         </Link>
         {/* <Link
           href="#about"
@@ -26,7 +29,7 @@ export function Header() {
         >
           About
         </Link> */}
-        <Link href="#contact" className="hover:text-emerald-400 transition-colors">
+        <Link href="/#contact" className="hover:text-emerald-400 transition-colors">
           {t("nav.contact")}
         </Link>
       </nav>

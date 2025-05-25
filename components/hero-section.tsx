@@ -20,6 +20,9 @@ export function HeroSection() {
         <Link href="#projects">
           <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">{t("hero.viewProjects")}</Button>
         </Link>
+        <Link href="/automation">
+          <Button className="bg-purple-600 hover:bg-purple-700 text-white">{t("hero.viewAutomation")}</Button>
+        </Link>
         <Link href="#contact">
           <Button variant="outline" className="border-gray-700 hover:bg-gray-800 text-white hover:text-emerald-400">
             <Mail className="mr-2 h-4 w-4" /> {t("hero.contactMe")}

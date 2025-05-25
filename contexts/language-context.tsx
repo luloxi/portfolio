@@ -17,14 +17,16 @@ const translations = {
     // Header
     "nav.projects": "Projects",
     "nav.skills": "Skills",
+    "nav.automation": "Automation",
     "nav.contact": "Contact",
 
     // Hero Section
     "hero.badge": "Web3 Developer & Blockchain Engineer",
     "hero.title": "Building the Decentralized Future",
     "hero.subtitle":
-      "Blockchain developer specializing in smart contracts, DApps, and Web3 infrastructure. Turning innovative ideas into decentralized reality.",
+      "Blockchain developer specializing in smart contracts, DApps, and Web3 infrastructure. I also offer AI-powered automation services to streamline business processes.",
     "hero.viewProjects": "View Projects",
+    "hero.viewAutomation": "Automation Services",
     "hero.contactMe": "Contact Me",
 
     // Projects Section
@@ -48,6 +50,18 @@ const translations = {
     "skills.frontend.description": "Building intuitive decentralized applications",
     "skills.blockchain.title": "Blockchain Protocols",
     "skills.blockchain.description": "Working with various blockchain networks",
+
+    // Automation Section
+    "automation.title": "AI-Powered Automation Services",
+    "automation.subtitle": "Streamline your business processes with intelligent automation",
+    "automation.description":
+      "I help businesses automate their workflows using n8n, the powerful open-source automation platform. From simple task automation to complex AI-driven processes, I create custom solutions that save time and increase efficiency.",
+    "automation.features.workflows": "Custom Workflow Design",
+    "automation.features.ai": "AI Integration & Processing",
+    "automation.features.apis": "API Connections & Data Sync",
+    "automation.features.monitoring": "Monitoring & Optimization",
+    "automation.cta": "Get Started with Automation",
+    "automation.backToHome": "← Back to Portfolio",
 
     // About Section
     "about.badge": "About Me",
@@ -73,14 +87,16 @@ const translations = {
     // Header
     "nav.projects": "Proyectos",
     "nav.skills": "Habilidades",
+    "nav.automation": "Automatización",
     "nav.contact": "Contacto",
 
     // Hero Section
     "hero.badge": "Desarrollador Web3 e Ingeniero Blockchain",
     "hero.title": "Construyendo el Futuro Descentralizado",
     "hero.subtitle":
-      "Desarrollador blockchain especializado en contratos inteligentes, DApps e infraestructura Web3. Convirtiendo ideas innovadoras en realidad descentralizada.",
+      "Desarrollador blockchain especializado en contratos inteligentes, DApps e infraestructura Web3. También ofrezco servicios de automatización con IA para optimizar procesos empresariales.",
     "hero.viewProjects": "Ver Proyectos",
+    "hero.viewAutomation": "Servicios de Automatización",
     "hero.contactMe": "Contáctame",
 
     // Projects Section
@@ -105,6 +121,18 @@ const translations = {
     "skills.frontend.description": "Construyendo aplicaciones descentralizadas intuitivas",
     "skills.blockchain.title": "Protocolos Blockchain",
     "skills.blockchain.description": "Trabajando con varias redes blockchain",
+
+    // Automation Section
+    "automation.title": "Servicios de Automatización con IA",
+    "automation.subtitle": "Optimiza los procesos de tu negocio con automatización inteligente",
+    "automation.description":
+      "Ayudo a las empresas a automatizar sus flujos de trabajo usando n8n, la poderosa plataforma de automatización de código abierto. Desde automatización simple de tareas hasta procesos complejos impulsados por IA, creo soluciones personalizadas que ahorran tiempo y aumentan la eficiencia.",
+    "automation.features.workflows": "Diseño de Flujos Personalizados",
+    "automation.features.ai": "Integración y Procesamiento de IA",
+    "automation.features.apis": "Conexiones API y Sincronización de Datos",
+    "automation.features.monitoring": "Monitoreo y Optimización",
+    "automation.cta": "Comenzar con Automatización",
+    "automation.backToHome": "← Volver al Portafolio",
 
     // About Section
     "about.badge": "Acerca de Mí",

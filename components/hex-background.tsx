@@ -39,7 +39,7 @@ export function HexBackground() {
             x: i * hexSpacing - 100 + offsetY,
             y: j * hexSpacing - 100,
             size: hexSize * (0.2 + Math.random() * 0.3),
-            opacity: 0.05 + Math.random() * 0.1,
+            opacity: 0.15 + Math.random() * 0.25, // Increased from 0.05-0.15 to 0.15-0.4
             speed: 0.1 + Math.random() * 0.2,
           })
         }
@@ -68,7 +68,7 @@ export function HexBackground() {
       ctx.closePath()
 
       ctx.strokeStyle = `rgba(16, 185, 129, ${opacity})`
-      ctx.lineWidth = 1
+      ctx.lineWidth = 1.5 // Increased from 1 to 1.5 for better visibility
       ctx.stroke()
     }
 
@@ -103,5 +103,5 @@ export function HexBackground() {
     }
   }, [])
 
-  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-70" />
+  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-80" />
 }
