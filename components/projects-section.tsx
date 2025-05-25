@@ -33,7 +33,7 @@ export function ProjectsSection() {
           image="/tap-thumbnail.png?height=300&width=400"
           tags={["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Express"]}
           link="https://tap-tan-ten.vercel.app/"
-          github="https://github.com/luloxi/tap"
+          
         />
         <ProjectCard
           title="BuidlGuidl projects"
