@@ -28,7 +28,7 @@ export function N8nChat() {
         mode: 'window',
         showWelcomeScreen: true,
         initialMessages: [
-          "Hi, I'm LuloxBot! 👋 What's your email address?"
+          "Hi, I'm LuloxBot! 👋 What can I help you with?"
         ],
         i18n: {
           en: {
