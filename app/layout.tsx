@@ -5,7 +5,8 @@ import { LanguageProvider } from "@/contexts/language-context"
 
 export const metadata: Metadata = {
   title: "Lulox's Portfolio",
-  description: "web3 developer & blockchain engineer",
+  description:
+    "Web3 developer & blockchain engineer offering smart contract development, DApps, and AI-powered automation services",
   generator: "v0.dev",
   icons: {
     icon: [
