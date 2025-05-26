@@ -14,15 +14,15 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 To run this project locally, clone the repository and install the dependencies:
 
-\`\`\`bash
+```bash
 pnpm install
-\`\`\`
+```
 
 Then, run the development server:
 
-\`\`\`bash
+```bash
 pnpm dev
-\`\`\`
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
