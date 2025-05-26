@@ -75,7 +75,7 @@ export function ContactSection() {
                 <div className="absolute inset-0 bg-gray-900/95 backdrop-blur-sm rounded-lg flex items-center justify-center p-6">
                   <div className="text-center">
                     <CheckCircle className="h-16 w-16 text-emerald-500 mx-auto mb-4" />
-                    <h4 className="text-xl font-bold text-emerald-400 mb-2">{t("contact.form.successTitle")}</h4>
+                    <h4 className="text-xl font-bold text-emerald-400 mb-2">{t("Thanks for your message!")}</h4>
                     <p className="text-emerald-200 text-lg">{state.message}</p>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export function ContactSection() {
                 </div>
               )}
             </div>
-            
+
             {/* Contact Methods */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
               <div className="flex flex-col items-center p-6 rounded-lg bg-gray-800/50">
