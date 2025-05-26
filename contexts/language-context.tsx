@@ -37,6 +37,8 @@ const translations = {
     "projects.sami.description":
       "Group chatroom game where players can bet crypto on who's the impostor AI in the chat.",
     "projects.punksociety.description": "Social network where posts are NFTs and likes send USDC to the post author.",
+    "projects.security.description":
+      "Security audits for smart contracts and decentralized applications.",
     "projects.tap.description":
       "Web2 platform to connect gamers and streamers with content creators and people in their field.",
     "projects.buidlguidl.description": "Several prototypes to show Scaffold-ETH 2 usage for creating dApps.",
@@ -115,6 +117,8 @@ const translations = {
       "Juego de chat grupal donde los jugadores pueden apostar crypto sobre quién es la IA impostora en el chat.",
     "projects.punksociety.description":
       "Red social donde las publicaciones son NFTs y los likes envían USDC al autor de la publicación.",
+      "projects.security.description":
+      "Auditoría de seguridad para contratos inteligentes y aplicaciones descentralizadas.",
     "projects.tap.description":
       "Plataforma Web2 para conectar gamers y streamers con creadores de contenido y personas en su campo.",
     "projects.buidlguidl.description": "Varios prototipos para mostrar el uso de Scaffold-ETH 2 para crear dApps.",
@@ -174,7 +178,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("en")
 
   const t = (key: string): string => {
-    return translations[language][key] || key
+    return (translations[language] as Record<string, string>)[key] || key
   }
 
   return <LanguageContext.Provider value={{ language, setLanguage, t }}>{children}</LanguageContext.Provider>

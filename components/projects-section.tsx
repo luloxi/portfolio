@@ -20,14 +20,6 @@ export function ProjectsSection() {
           github="https://github.com/fabian416/sami"
         />
         <ProjectCard
-          title="PunkSociety - Social network"
-          description={t("projects.punksociety.description")}
-          image="/punksociety-thumbnail.jpg?height=300&width=400"
-          tags={["Solidity", "React", "Next.js", "TypeScript", "Tailwind CSS", "Scaffold-ETH 2", "IPFS"]}
-          link="https://punksociety.xyz/"
-          github="https://github.com/luloxi/PunkSociety"
-        />
-        <ProjectCard
           title="Tap - Job search platform"
           description={t("projects.tap.description")}
           image="/tap-thumbnail.png?height=300&width=400"
@@ -36,11 +28,26 @@ export function ProjectsSection() {
           
         />
         <ProjectCard
+          title="PunkSociety - Social network"
+          description={t("projects.punksociety.description")}
+          image="/punksociety-thumbnail.jpg?height=300&width=400"
+          tags={["Solidity", "React", "Next.js", "TypeScript", "Tailwind CSS", "Scaffold-ETH 2", "IPFS"]}
+          link="https://punksociety.xyz/"
+          github="https://github.com/luloxi/PunkSociety"
+        />
+        <ProjectCard
           title="BuidlGuidl projects"
           description={t("projects.buidlguidl.description")}
           image="/buidlguidl-thumbnail.jpg?height=300&width=400"
           tags={["Solidity", "React", "Next.js", "TypeScript", "Tailwind CSS", "Scaffold-ETH 2", "IPFS"]}
           link="https://app.buidlguidl.com/builders/0xfBD9Ca40386A8C632cf0529bbb16b4BEdB59a0A0"
+        />
+        <ProjectCard
+          title="Solidity - Security Audits"
+          description={t("projects.security.description")}
+          image="/security-thumbnail.jpg?height=300&width=400"
+          tags={["Solidity", "Security", "Foundry", "Hardhat"]}
+          link="https://github.com/luloxi/security-reviews"
         />
       </div>
 
