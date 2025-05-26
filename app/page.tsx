@@ -6,7 +6,7 @@ import { AboutSection } from "@/components/about-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { HexBackground } from "@/components/hex-background"
-import { N8nChat } from "@/components/n8n-chat"
+// import { N8nChat } from "@/components/n8n-chat"
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <AboutSection />
       <ContactSection />
       <Footer />
-      <N8nChat />
+      {/* <N8nChat /> */}
     </div>
   )
 }
