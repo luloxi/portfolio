@@ -22,9 +22,9 @@ const translations = {
 
     // Hero Section
     "hero.badge": "Web3 Developer & Blockchain Engineer",
-    "hero.title": "Building the Decentralized Future",
+    "hero.title": "Building a Decentralized Future",
     "hero.subtitle":
-      "Blockchain developer specializing in smart contracts, DApps, and Web3 infrastructure. I also offer AI-powered automation services to streamline business processes.",
+      "Blockchain developer specialized in smart contracts, DApps, and Web3. I also offer AI-powered automation services to streamline business processes.",
     "hero.viewProjects": "View Projects",
     "hero.viewAutomation": "Automation Services",
     "hero.contactMe": "Contact Me",

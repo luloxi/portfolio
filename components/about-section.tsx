@@ -43,7 +43,7 @@ export function AboutSection() {
               <p className="text-gray-400">Years Experience</p>
             </div>
           </div> */}
-          <Link href="https://github.com/luloxi/Resume" target="_blank">
+          <Link href="https://docs.google.com/document/d/1hxnoPvQtLM_2khVTuTrC5M8FJIRmNdkIPPUHZpXzY_c/edit?usp=sharing" target="_blank">
             <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">{t("about.seeResume")}</Button>
           </Link>
         </div>
