@@ -11,7 +11,7 @@ export function HeroSection() {
   const { t } = useLanguage()
   return (
     <section className="container mx-auto px-4 py-20 md:py-32 flex flex-col items-center text-center relative z-10">
-      <Badge className="mb-4 bg-emerald-900 text-emerald-400 hover:bg-emerald-900">{t("hero.badge")}</Badge>
+      {/* <Badge className="mb-4 bg-emerald-900 text-emerald-400 hover:bg-emerald-900">{t("hero.badge")}</Badge> */}
       <h1 className="text-4xl pb-3 md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400">
         {t("hero.title")}
       </h1>
