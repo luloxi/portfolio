@@ -124,7 +124,7 @@ export function AutomationSection() {
 
       <div className="text-center">
         <Link href="#contact">
-          <Button className="bg-purple-600 hover:bg-purple-700 text-white text-lg px-8 py-3">
+          <Button className="bg-pink-700 hover:bg-pink-600 text-white text-lg px-8 py-3">
             {t("automation.cta")}
           </Button>
         </Link>
