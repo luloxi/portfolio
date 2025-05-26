@@ -13,7 +13,7 @@ export function SkillsSection() {
       <h2 className="text-3xl font-bold mb-2">{t("skills.title")}</h2>
       <p className="text-gray-400 mb-12">{t("skills.subtitle")}</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="bg-gray-900 border-gray-800">
           <CardContent className="pt-6">
             <div className="rounded-full bg-emerald-900/30 w-12 h-12 flex items-center justify-center mb-4">
@@ -71,29 +71,7 @@ export function SkillsSection() {
           </CardContent>
         </Card>
 
-        <Card className="bg-gray-900 border-gray-800">
-          <CardContent className="pt-6">
-            <div className="rounded-full bg-emerald-900/30 w-12 h-12 flex items-center justify-center mb-4">
-              <Database className="h-6 w-6 text-emerald-500" />
-            </div>
-            <h3 className="text-xl font-bold mb-2">{t("skills.blockchain.title")}</h3>
-            <p className="text-gray-400 mb-4">{t("skills.blockchain.description")}</p>
-            <div className="flex flex-wrap gap-2">
-              <Badge variant="outline" className="border-gray-700">
-                Ethereum
-              </Badge>
-              <Badge variant="outline" className="border-gray-700">
-                Base
-              </Badge>
-              <Badge variant="outline" className="border-gray-700">
-                Avalanche
-              </Badge>
-              <Badge variant="outline" className="border-gray-700">
-                Arbitrum
-              </Badge>
-            </div>
-          </CardContent>
-        </Card>
+        
       </div>
     </section>
   )
