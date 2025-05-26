@@ -79,6 +79,13 @@ const translations = {
     "contact.fiverr.title": "Hire Me on Fiverr",
     "contact.fiverr.description": "For freelance projects and quick tasks",
     "contact.fiverr.link": "View Fiverr Profile",
+    "contact.form.title": "Send a Message",
+    "contact.form.email": "Email Address",
+    "contact.form.emailPlaceholder": "your.email@example.com",
+    "contact.form.message": "Message",
+    "contact.form.messagePlaceholder": "Tell me about your project or how I can help you...",
+    "contact.form.send": "Send Message",
+    "contact.form.sending": "Sending...",
 
     // Footer
     "footer.rights": "All rights reserved.",
@@ -150,6 +157,13 @@ const translations = {
     "contact.fiverr.title": "Contrátame en Fiverr",
     "contact.fiverr.description": "Para proyectos freelance y tareas rápidas",
     "contact.fiverr.link": "Ver Perfil de Fiverr",
+    "contact.form.title": "Enviar Mensaje",
+    "contact.form.email": "Dirección de Email",
+    "contact.form.emailPlaceholder": "tu.email@ejemplo.com",
+    "contact.form.message": "Mensaje",
+    "contact.form.messagePlaceholder": "Cuéntame sobre tu proyecto o cómo puedo ayudarte...",
+    "contact.form.send": "Enviar Mensaje",
+    "contact.form.sending": "Enviando...",
 
     // Footer
     "footer.rights": "Todos los derechos reservados.",
