@@ -20,7 +20,7 @@ export function Header() {
         <Link href="/#skills" className="hover:text-emerald-400 transition-colors">
           {t("nav.skills")}
         </Link>
-        <Link href="/automation" className="hover:text-purple-400 transition-colors">
+        <Link href="/automation" className="font-bold text-pink-500 transition-colors">
           {t("nav.automation")}
         </Link>
         {/* <Link
