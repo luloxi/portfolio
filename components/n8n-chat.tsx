@@ -28,14 +28,13 @@ export function N8nChat() {
         mode: 'window',
         showWelcomeScreen: true,
         initialMessages: [
-          'Hi there! 👋',
-          "I'm Lulox's AI assistant. How can I help you today?"
+          "Hi, I'm LuloxBot! 👋 What's your email address?"
         ],
         i18n: {
           en: {
             title: "Chat with Lulox's AI",
-            subtitle: "Ask me about Web3 development, automation, or any questions!",
-            footer: "Powered by n8n",
+            subtitle: "Send me a message and I'll assist you.",
+            
             getStarted: "Start Conversation",
             inputPlaceholder: "Type your message...",
           },
