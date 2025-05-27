@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState, type ReactNode } from "react"
+import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
 
 type Language = "en" | "es"
 
@@ -37,8 +37,7 @@ const translations = {
     "projects.sami.description":
       "Group chatroom game where players can bet crypto on who's the impostor AI in the chat.",
     "projects.punksociety.description": "Social network where posts are NFTs and likes send USDC to the post author.",
-    "projects.security.description":
-      "Security audits for smart contracts and decentralized applications.",
+    "projects.security.description": "Security audits for smart contracts and decentralized applications.",
     "projects.tap.description":
       "Web2 platform to connect gamers and streamers with content creators and people in their field.",
     "projects.buidlguidl.description": "Several prototypes to show Scaffold-ETH 2 usage for creating dApps.",
@@ -117,7 +116,7 @@ const translations = {
       "Juego de chat grupal donde los jugadores pueden apostar crypto sobre quién es la IA impostora en el chat.",
     "projects.punksociety.description":
       "Red social donde las publicaciones son NFTs y los likes envían USDC al autor de la publicación.",
-      "projects.security.description":
+    "projects.security.description":
       "Auditoría de seguridad para contratos inteligentes y aplicaciones descentralizadas.",
     "projects.tap.description":
       "Plataforma Web2 para conectar gamers y streamers con creadores de contenido y personas en su campo.",
@@ -174,8 +173,29 @@ const translations = {
   },
 }
 
+// Function to detect browser language
+const detectBrowserLanguage = (): Language => {
+  if (typeof window === "undefined") return "en"
+
+  const browserLang = navigator.language || navigator.languages?.[0] || "en"
+
+  // Check if browser language starts with 'es' (Spanish)
+  if (browserLang.toLowerCase().startsWith("es")) {
+    return "es"
+  }
+
+  // Default to English for all other languages
+  return "en"
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("en")
+
+  // Auto-detect browser language on mount
+  useEffect(() => {
+    const detectedLanguage = detectBrowserLanguage()
+    setLanguage(detectedLanguage)
+  }, [])
 
   const t = (key: string): string => {
     return (translations[language] as Record<string, string>)[key] || key
