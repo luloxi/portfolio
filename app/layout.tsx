@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Lulox" }],
   creator: "Lulox",
   publisher: "Lulox",
+  metadataBase: new URL("https://lulox.vercel.app"),
   icons: {
     icon: [
       {
@@ -23,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://lulox.dev",
+    url: "https://lulox.vercel.app",
     title: "Lulox's Portfolio - Web3 Developer & Blockchain Engineer",
     description:
       "Web3 developer & blockchain engineer offering smart contract development, DApps, and AI-powered automation services",
     siteName: "Lulox's Portfolio",
     images: [
       {
-        url: "/social-thumbnail.jpg",
+        url: "https://lulox.vercel.app/social-thumbnail.jpg",
         width: 1200,
         height: 630,
         alt: "Lulox's Portfolio - Web3 Developer & Blockchain Engineer",
@@ -39,11 +40,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@lulox",
+    creator: "@lulox",
     title: "Lulox's Portfolio - Web3 Developer & Blockchain Engineer",
     description:
       "Web3 developer & blockchain engineer offering smart contract development, DApps, and AI-powered automation services",
-    images: ["/social-thumbnail.jpg"],
-    creator: "@lulox",
+    images: ["https://lulox.vercel.app/social-thumbnail.jpg"],
   },
   robots: {
     index: true,
