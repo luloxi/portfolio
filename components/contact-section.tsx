@@ -6,6 +6,7 @@ import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
 import { submitContactForm } from "@/app/actions/contact"
 import { useActionState } from "react"
+import CalendlyEmbed from "./CalendlyEmbed"
 
 export function ContactSection() {
   const { t } = useLanguage()
@@ -90,29 +91,13 @@ export function ContactSection() {
             </div>
 
             {/* Contact Methods */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-              <div className="flex flex-col items-center p-6 rounded-lg bg-gray-800/50">
-                <Mail className="h-10 w-10 text-emerald-500 mb-4" />
-                <h3 className="text-xl font-bold mb-2">{t("contact.email.title")}</h3>
-                <p className="text-gray-400 mb-4 text-center">{t("contact.email.description")}</p>
-                <Link href="mailto:lulox.eth@protonmail.com" className="text-emerald-400 hover:text-emerald-300">
-                  lulox.eth@protonmail.com
-                </Link>
-              </div>
-              <div className="flex flex-col items-center p-6 rounded-lg bg-gray-800/50">
-                <Briefcase className="h-10 w-10 text-emerald-500 mb-4" />
-                <h3 className="text-xl font-bold mb-2">{t("contact.fiverr.title")}</h3>
-                <p className="text-gray-400 mb-4 text-center">{t("contact.fiverr.description")}</p>
-                <Link
-                  href="https://www.fiverr.com/s/rElgrr7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-emerald-400 hover:text-emerald-300"
-                >
-                  {t("contact.fiverr.link")}
-                </Link>
-              </div>
-            </div>
+           
+        <div className="container mx-auto">
+          <div className="w-full" style={{ height: "700px" }}>
+            <CalendlyEmbed url="https://calendly.com/lulox-eth/30min" />
+          </div>
+        </div>
+      
 
            
           </div>
