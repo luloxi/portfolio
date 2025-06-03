@@ -48,7 +48,7 @@ const translations = {
 
     // Contact Section
     "contact.title": "Schedule a Call",
-    "contact.scheduleDescription": "Book a time to discuss your project needs",
+    "contact.scheduleDescription": "Let's talk about your project needs or collaboration opportunities.",
 
     // Footer
     "footer.rights": "All rights reserved.",
@@ -90,7 +90,7 @@ const translations = {
 
     // Contact Section
     "contact.title": "Agendar una Llamada",
-    "contact.scheduleDescription": "Reserva un horario para discutir las necesidades de tu proyecto",
+    "contact.scheduleDescription": "Hablemos sobre las necesidades de tu proyecto o oportunidades de colaboración.",
 
     // Footer
     "footer.rights": "Todos los derechos reservados.",

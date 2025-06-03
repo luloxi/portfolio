@@ -35,7 +35,7 @@ export function ProjectsSection() {
           link="https://punksociety.xyz/"
           github="https://github.com/luloxi/PunkSociety"
         />
-        {/* <ProjectCard
+        <ProjectCard
           title="BuidlGuidl projects"
           description={t("projects.buidlguidl.description")}
           image="/buidlguidl-thumbnail.jpg?height=300&width=400"
@@ -48,7 +48,7 @@ export function ProjectsSection() {
           image="/security-thumbnail.jpg?height=300&width=400"
           tags={["Solidity", "Security", "Foundry", "Hardhat"]}
           link="https://github.com/luloxi/security-reviews"
-        /> */}
+        />
       </div>
 
       {/* <div className="text-center mt-12">
