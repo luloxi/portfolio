@@ -1,14 +1,9 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { usePathname } from "next/navigation"
 
 export function HexBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const pathname = usePathname()
-
-  // Determine if we're on the automation page
-  const isAutomationPage = pathname === "/automation"
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -72,10 +67,8 @@ export function HexBackground() {
       }
       ctx.closePath()
 
-      // Change color based on current page
-      const color = isAutomationPage
-        ? `rgba(236, 72, 153, ${opacity})` // Pink for automation page
-        : `rgba(16, 185, 129, ${opacity})` // Emerald for home page
+      // Always use emerald color
+      const color = `rgba(16, 185, 129, ${opacity})`
 
       ctx.strokeStyle = color
       ctx.lineWidth = 1.5
@@ -111,7 +104,7 @@ export function HexBackground() {
       window.removeEventListener("resize", createHexagons)
       cancelAnimationFrame(animationFrameId)
     }
-  }, [isAutomationPage]) // Re-run effect when page changes
+  }, [])
 
   return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-80" />
 }

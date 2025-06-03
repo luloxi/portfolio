@@ -4,7 +4,6 @@ import Link from "next/link"
 import { Mail } from "lucide-react"
 import { Github, Twitter, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { useLanguage } from "@/contexts/language-context"
 
 export function HeroSection() {
@@ -19,9 +18,6 @@ export function HeroSection() {
       <div className="flex gap-4 flex-wrap justify-center">
         <Link href="#projects">
           <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">{t("hero.viewProjects")}</Button>
-        </Link>
-        <Link href="/automation">
-          <Button className="bg-pink-700 hover:bg-pink-600 text-white">{t("hero.viewAutomation")}</Button>
         </Link>
         <Link href="#contact">
           <Button variant="outline" className="border-gray-700 hover:bg-gray-800 text-white hover:text-emerald-400">

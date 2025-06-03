@@ -17,18 +17,6 @@ export function Header() {
         <Link href="/#projects" className="hover:text-emerald-400 transition-colors">
           {t("nav.projects")}
         </Link>
-        {/* <Link href="/#skills" className="hover:text-emerald-400 transition-colors">
-          {t("nav.skills")}
-        </Link> */}
-        <Link href="/automation" className="font-bold text-pink-500 transition-colors">
-          {t("nav.automation")}
-        </Link>
-        {/* <Link
-          href="#about"
-          className="hover:text-emerald-400 transition-colors"
-        >
-          About
-        </Link> */}
         <Link href="/#contact" className="hover:text-emerald-400 transition-colors">
           {t("nav.contact")}
         </Link>
