@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Hexagon, Github, Twitter, Linkedin } from "lucide-react"
-import { useLanguage } from "@/contexts/language-context"
+import Link from "next/link";
+import { Hexagon, Github, Twitter, Linkedin } from "lucide-react";
+import { useLanguage } from "@/contexts/language-context";
+import { SocialIcon } from "react-social-icons";
 
 export function Footer() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
   return (
     <footer className="border-t border-gray-800 py-12 relative z-10">
       <div className="container mx-auto px-4">
@@ -14,34 +15,31 @@ export function Footer() {
             <Hexagon className="h-6 w-6 text-emerald-500" />
             <span className="font-bold">Lulox</span>
           </div>
-          <div className="flex gap-4 mt-4 md:mt-0">
-             <Link
-              href="https://github.com/luloxi"
-              className="text-gray-400 hover:text-white transition-colors"
-              target="_blank"
-            >
-              <Github className="h-5 w-5" />
-            </Link>
-            <Link
-              href="https://x.com/LuloxDev"
-              className="text-gray-400 hover:text-white transition-colors"
-              target="_blank"
-            >
-              <Twitter className="h-5 w-5" />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/lulox/"
-              className="text-gray-400 hover:text-white transition-colors"
-              target="_blank"
-            >
-              <Linkedin className="h-5 w-5" />
-            </Link>
+          <div className="flex gap-4">
+            <SocialIcon
+              url="https://github.com/luloxi"
+              style={{ height: 45, width: 45 }}
+            />
+            <SocialIcon
+              url="https://www.linkedin.com/in/lulox/"
+              style={{ height: 45, width: 45 }}
+            />
+            <SocialIcon
+              url="https://x.com/LuloxDev"
+              style={{ height: 45, width: 45 }}
+            />
+            <SocialIcon
+              url="https://t.me/lulox"
+              style={{ height: 45, width: 45 }}
+            />
+            <SocialIcon
+              url="https://instagram.com/lulo.bianco"
+              style={{ height: 45, width: 45 }}
+            />
           </div>
-          <div className="flex gap-4 mt-4 md:mt-0">
-          
-          </div>
+          <div className="flex gap-4 mt-4 md:mt-0"></div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
