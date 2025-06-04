@@ -47,13 +47,7 @@ export function HeroSection() {
         >
           <Linkedin className="h-6 w-6" />
         </Link>
-        <Link
-          href="https://x.com/LuloxDev"
-          className="text-gray-400 hover:text-white transition-colors"
-          target="_blank"
-        >
-          <Telegram className="h-6 w-6" />
-        </Link>
+
         <Link
           href="https://x.com/LuloxDev"
           className="text-gray-400 hover:text-white transition-colors"
