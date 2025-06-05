@@ -12,53 +12,36 @@ export function ProjectsSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
-          title="SAMI - AI game"
+          title="SAMI - AI Game"
           description={t("projects.sami.description")}
           image="/sami-thumbnail.jpg?height=300&width=400"
-          tags={["Solidity", "React", "Next.js", "TypeScript", "Tailwind CSS", "Scaffold-ETH 2", "Node.js", "Express"]}
-          link="https://playsami.fun/"
-          github="https://github.com/fabian416/sami"
+          slug="sami"
         />
         <ProjectCard
-          title="Tap - Job search platform"
+          title="Tap - Job Search Platform"
           description={t("projects.tap.description")}
           image="/tap-thumbnail.png?height=300&width=400"
-          tags={["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Express"]}
-          link="https://tap-tan-ten.vercel.app/"
-          
+          slug="tap"
         />
         <ProjectCard
-          title="PunkSociety - Social network"
+          title="PunkSociety - Social Network"
           description={t("projects.punksociety.description")}
           image="/punksociety-thumbnail.jpg?height=300&width=400"
-          tags={["Solidity", "React", "Next.js", "TypeScript", "Tailwind CSS", "Scaffold-ETH 2", "IPFS"]}
-          link="https://punksociety.xyz/"
-          github="https://github.com/luloxi/PunkSociety"
+          slug="punksociety"
         />
         <ProjectCard
-          title="BuidlGuidl projects"
+          title="BuidlGuidl Projects"
           description={t("projects.buidlguidl.description")}
           image="/buidlguidl-thumbnail.jpg?height=300&width=400"
-          tags={["Solidity", "React", "Next.js", "TypeScript", "Tailwind CSS", "Scaffold-ETH 2", "IPFS"]}
-          link="https://app.buidlguidl.com/builders/0xfBD9Ca40386A8C632cf0529bbb16b4BEdB59a0A0"
+          slug="buidlguidl"
         />
         <ProjectCard
-          title="Solidity - Security Audits"
+          title="Security Audits"
           description={t("projects.security.description")}
           image="/security-thumbnail.jpg?height=300&width=400"
-          tags={["Solidity", "Security", "Foundry", "Hardhat"]}
-          link="https://github.com/luloxi/security-reviews"
+          slug="security"
         />
       </div>
-
-      {/* <div className="text-center mt-12">
-        <Button
-          variant="outline"
-          className="border-gray-700 hover:bg-gray-800 text-white hover:text-emerald-400"
-        >
-          View All Projects <ExternalLink className="ml-2 h-4 w-4" />
-        </Button>
-      </div> */}
     </section>
   )
 }
