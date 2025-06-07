@@ -38,12 +38,12 @@ export function ProjectsSection() {
           image="/buidlguidl-thumbnail.jpg?height=300&width=400"
           slug="buidlguidl"
         />
-        <ProjectCard
+        {/* <ProjectCard
           title="Security Audits"
           description={t("projects.security.description")}
           image="/security-thumbnail.jpg?height=300&width=400"
           slug="security"
-        />
+        /> */}
       </div>
     </section>
   );
