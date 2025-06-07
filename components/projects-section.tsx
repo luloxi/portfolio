@@ -1,12 +1,15 @@
-"use client"
-import { ProjectCard } from "@/components/project-card"
-import { useLanguage } from "@/contexts/language-context"
+"use client";
+import { ProjectCard } from "@/components/project-card";
+import { useLanguage } from "@/contexts/language-context";
 
 export function ProjectsSection() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   return (
-    <section id="projects" className="container mx-auto px-4 py-20 relative z-10">
+    <section
+      id="projects"
+      className="container mx-auto px-4 py-20 relative z-10"
+    >
       <h2 className="text-3xl font-bold mb-2">{t("projects.title")}</h2>
       <p className="text-gray-400 mb-12">{t("projects.subtitle")}</p>
 
@@ -17,12 +20,12 @@ export function ProjectsSection() {
           image="/sami-thumbnail.jpg?height=300&width=400"
           slug="sami"
         />
-        <ProjectCard
+        {/* <ProjectCard
           title="Tap - Job Search Platform"
           description={t("projects.tap.description")}
           image="/tap-thumbnail.png?height=300&width=400"
           slug="tap"
-        />
+        /> */}
         <ProjectCard
           title="PunkSociety - Social Network"
           description={t("projects.punksociety.description")}
@@ -43,5 +46,5 @@ export function ProjectsSection() {
         />
       </div>
     </section>
-  )
+  );
 }
